@@ -73,7 +73,7 @@ Header
 
 .header .logo{
   font-family: 'Bungee Shade', cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bolder;
   color: var(--clr-1);
 }
@@ -83,7 +83,7 @@ Header
 
 .header .logo i{
   color: var(--clr-1);
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .header .navbar a{
@@ -100,14 +100,15 @@ Header
 
 .header .icons div{
   background-color: var(--clr-4);
+  border: 0.2rem solid var(--clr-1);
   border-radius: 1rem;
   color: var(--clr-1);
-  font-size: 1.8rem;
-  height: 3rem;
-  line-height: 3.2rem;
+  font-size: 2.5rem;
+  height: 4rem;
+  line-height: 4rem;
   margin-right: .3rem;
   text-align: center;
-  width: 3rem;
+  width: 4rem;
 }
 
 .header .icons div:hover{
