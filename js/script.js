@@ -1,5 +1,6 @@
 let searchForm = document.querySelector('.search-form');
 let easter = document.querySelector('.easter a');
+
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
     easter.classList.toggle('active');
