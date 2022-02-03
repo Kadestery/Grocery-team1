@@ -27,6 +27,7 @@ Variables
   --clr-3:#c0cfb2;
   --clr-4:#f1ebe1;
   --clr-5:#FFFFFF;
+  --clr-6: #dfd7cc;
   /* box */
   --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   --border: .2rem solid rgba(0,0,0,.1);
@@ -139,7 +140,7 @@ Header
 .header .search-form{
   position: absolute;
   top: 110%; right: -110%;
-  width: 50rem;
+  width: 50vw;
   height: 4.5rem;
   background: var(--clr-4);
   border-radius: .5rem;
@@ -206,7 +207,7 @@ Header
 .header .cart .box .bx-trash{
   font-size: 2rem;
   position: absolute;
-  top: 50%; right: -110%;
+  top: 50%; right: 2rem;
   cursor: pointer;
   color: var(--clr-1);
   transform: translateY(-50%);
@@ -241,4 +242,108 @@ Header
   display: block;
   text-align: center;
   margin: 1rem;
+}
+
+/* Log in */
+
+.header .login-form{
+  position: absolute;
+  top: 	110%; right: -110%;
+  padding: 2rem;
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  width: 30rem;
+  background: var(--clr-4);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.header .login-form.active{
+  right:2rem;
+}
+
+.header .login-form h3{
+  font-size: 2.5rem;
+}
+
+.header .login-form .box{
+  width: 100%;
+  margin: .7rem 0;
+  background: var(--clr-6);
+  border-radius: .5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+  text-transform: none;
+}
+
+.header .login-form p{
+  font-size: 1.25rem;
+  padding: .5rem 0;
+  color: #3f413f;
+}
+
+.header .login-form a{
+  color: var(--clr-1);
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding: 2rem;
+  }
+
+}
+@media (max-width:520px){
+
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: var(--clr-4);
+    transition: var(--transition);
+  }
+
+  .header .navbar.active{
+    right: 2rem;
+  }
+
+  .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+    font-size: 55%;
+  }
+
 }
