@@ -139,21 +139,19 @@ Header
 
 .header .search-form{
   position: absolute;
-  top: 110%; right: -110%;
+  top: 110%; right: 2rem;
   width: 50vw;
   height: 4.5rem;
   background: var(--clr-4);
   border-radius: .5rem;
   overflow: hidden;
-  display: flex;
+  display: none;
   align-items: center;
   box-shadow: var(--box-shadow);
-  transition: var(--transition);
 }
 
 .header .search-form.active{
-  right:  2rem;
-  transition: var(--transition);
+  display: flex;
 }
 .header .search-form input{
   height: 100%;
@@ -178,19 +176,18 @@ Header
 /* cart */
 
 .header .cart{
+  display: none;
   position: absolute;
-  top: 	110%; right: -110%;
+  top: 	110%; right: 2rem;
   padding: 1rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
   width: 35rem;
   background: var(--clr-4);
-  transition: var(--transition);
 }
 
 .header .cart.active{
-  right: 2rem;
-  transition: var(--transition);
+  display: inline;
 }
 .header .cart .box{
   display: flex;
@@ -247,19 +244,19 @@ Header
 /* Log in */
 
 .header .login-form{
+  display: none;
   position: absolute;
-  top: 	110%; right: -110%;
+  top: 	110%; right: 2rem;
   padding: 2rem;
   border-radius: .5rem;
   box-shadow: var(--box-shadow);
   width: 30rem;
   background: var(--clr-4);
-  transition: var(--transition);
   text-align: center;
 }
 
 .header .login-form.active{
-  right:2rem;
+  display: inline;
 }
 
 .header .login-form h3{
@@ -356,5 +353,5 @@ Header
   html{
     font-size: 55%;
   }
-
+ 
 }
