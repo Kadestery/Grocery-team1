@@ -288,9 +288,20 @@ Header
   text-decoration: underline;
 }
 
+/* easter */
 
-
-
+ .easter a{
+  cursor: default;
+  font-size: 1.5rem;
+  color: var(--clr-4);
+  position: absolute;
+  top: -3rem;
+  z-index: 20;
+}
+.easter a.active{
+  top: 3rem;
+}
+/*  easter */
 
 
 
