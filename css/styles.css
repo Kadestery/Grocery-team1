@@ -328,7 +328,6 @@ Home
 /* featured */
 
 .featured{
-  display: flex;
   width: 55vw;
   height: 25rem;
   background-image:url("/images/milk.jpg");
@@ -337,22 +336,49 @@ Home
   border-radius: .5rem;
 }
 
-.featured h1{
-  font-weight: 400;
-  font-size: 2.5rem;
-  color: var(--clr-4);
-  padding-left: 5rem;
-  padding-top: 8rem;
-}
-
 /* sale */
 
 .sale{
-  display: flex;
   width: 35vw;
   background-image: url("/images/nut.jpg");
   background-size: cover;
   border-radius: .5rem;
+}
+
+/* both */
+
+.featured h1,
+.sale h1{
+  text-transform: none;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 2.5rem;
+  color: var(--clr-4);
+  padding: 3rem;
+}
+
+.featured p,
+.sale p{
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  color: var(--clr-4);
+}
+
+.featured a,
+.sale a{
+  margin-top: 8rem;
+  margin-left: 3rem;
+}
+
+.featured .btn,
+.sale .btn{
+  color: var(--clr-4);
+  border: .2rem solid var(--clr-4);
+}
+
+.featured:hover,
+.sale:hover{
+  box-shadow: var(--box-shadow);
 }
 
 
