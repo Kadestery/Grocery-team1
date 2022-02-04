@@ -53,6 +53,10 @@ body{
   background: #eee;
 }
 
+section{
+  padding: 2rem 12%;
+}
+
 .btn{
   margin-top: 1rem;
   display: inline-block;
@@ -140,7 +144,7 @@ Header
 .header .search-form{
   position: absolute;
   top: 110%; right: 2rem;
-  width: 50vw;
+  width: 90vw;
   height: 4.5rem;
   background: var(--clr-4);
   border-radius: .5rem;
@@ -300,14 +304,63 @@ Header
 }
 /*  easter */
 
+/*
+=============== 
+Home
+===============
+*/
+
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/images/home-bg1.jpg");
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.content{
+  display: flex;
+  gap: 1rem;
+}
+
+/* featured */
+
+.featured{
+  display: flex;
+  width: 55vw;
+  height: 25rem;
+  background-image:url("/images/milk.jpg");
+  background-size: cover;
+  background-position:top;
+  border-radius: .5rem;
+}
+
+.featured h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--clr-4);
+  padding-left: 5rem;
+  padding-top: 8rem;
+}
+
+/* sale */
+
+.sale{
+  display: flex;
+  width: 35vw;
+  background-image: url("/images/nut.jpg");
+  background-size: cover;
+  border-radius: .5rem;
+}
 
 
-
-
-
-
-
-/* media queries */
+/*
+=============== 
+Media queries
+===============
+*/
 
 @media (max-width:991px){
 
@@ -353,5 +406,5 @@ Header
   html{
     font-size: 55%;
   }
- 
+
 }
