@@ -321,8 +321,10 @@ Home
 }
 
 .content{
-  display: flex;
-  gap: 1rem;
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-columns: auto auto;
 }
 
 /* featured */
@@ -340,6 +342,7 @@ Home
 
 .sale{
   width: 35vw;
+  height: 25rem;
   background-image: url("/images/nut.jpg");
   background-size: cover;
   border-radius: .5rem;
@@ -399,6 +402,17 @@ Media queries
   }
 
 }
+
+@media (max-width:560px) {
+  .content{
+    grid-template-columns: auto;
+  }
+
+  .sale, .featured{
+    width: 90vw;
+  }
+}
+
 @media (max-width:520px){
 
   #menu-btn{
@@ -406,8 +420,9 @@ Media queries
   }
 
   .header .navbar{
+    display: none;
     position: absolute;
-    top: 110%; right: -110%;
+    top: 110%; right: 2rem;
     width: 30rem;
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
@@ -416,7 +431,7 @@ Media queries
   }
 
   .header .navbar.active{
-    right: 2rem;
+    display: inline-block;
   }
 
   .header .navbar a{
