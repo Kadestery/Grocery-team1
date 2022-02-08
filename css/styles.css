@@ -54,7 +54,13 @@ body{
 }
 
 section{
-  padding: 2rem 12%;
+  padding: 1rem 9%;
+}
+
+.section-title{
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1.25rem;
 }
 
 .btn{
@@ -311,13 +317,25 @@ Home
 */
 
 .home{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   background: url("/images/home-bg1.jpg");
   background-size: cover;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+
+/*
+=============== 
+Special
+===============
+*/
+
+
+.special{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .content{
@@ -384,6 +402,16 @@ Home
   box-shadow: var(--box-shadow);
 }
 
+
+/*
+=============== 
+Aisles
+===============
+*/
+
+.aisle{
+  padding: 1rem;
+}
 
 /*
 =============== 
