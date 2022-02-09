@@ -139,7 +139,7 @@ Header
   font-size: 3rem;
 }
 
-.header .navbar a{
+.header a{
   color: #44624a;
   font-size: 1.8rem;
   margin: 0 1rem;
@@ -148,6 +148,32 @@ Header
   color: var(--clr-2);
   transition: var(--transition);
 }
+
+.header .aisles-menu{
+  display: none;
+  position: absolute;
+  top: 100%; right: calc(50% - 12rem);
+  width: 20rem;
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  background: var(--clr-4);
+  transition: var(--transition);
+}
+.aisles-menu a:hover{
+  box-shadow: var(--box-shadow);
+}
+
+.aisles-menu.active{
+  display: grid;
+}
+
+.header .aisles-menu a{
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    width: 20rem;
+    display: block;
+  }
 
 .header .icons div{
   background-color: var(--clr-4);
@@ -176,6 +202,7 @@ Header
 /* search */
 
 .header .search-form{
+  display: none;
   position: absolute;
   top: 110%; right: 2rem;
   width: 90vw;
@@ -183,7 +210,6 @@ Header
   background: var(--clr-4);
   border-radius: .5rem;
   overflow: hidden;
-  display: none;
   align-items: center;
   box-shadow: var(--box-shadow);
 }
@@ -389,6 +415,7 @@ Special
   display: flex;
   justify-content: space-between;
 }
+
 .switch{
   margin-top: 10rem;
   margin-right: 1rem;
@@ -605,6 +632,10 @@ Media queries
     font-size: 2rem;
     margin: 2rem 2.5rem;
     display: block;
+  }
+
+  .header .aisles-menu{
+    top: 28rem; right: 2rem;
   }
 
 }

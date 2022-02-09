@@ -38,6 +38,16 @@ document.querySelector('#menu-btn').onclick = () => {
     login.classList.remove('active');
 }
 
+let aisle = document.querySelector('.aisles-menu');
+
+document.querySelector('#aisles-btn').onclick = () => {
+    aisle.classList.toggle('active');
+
+    searchForm.classList.remove('active');
+    cart.classList.remove('active');
+    login.classList.remove('active');
+}
+
 
 
 
