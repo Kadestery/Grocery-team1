@@ -54,7 +54,7 @@ body{
 }
 
 section{
-  padding: 2rem 9%;
+  padding: 2rem 5%;
 }
 
 .section-title{
@@ -62,7 +62,13 @@ section{
   text-align: center;
   padding-bottom: 2rem;
 }
-
+.section-title span{
+  background: var(--clr-1);
+  padding: .5rem 3rem;
+  display: inline-block;
+  clip-path: polygon(10% 10%, 90% 10%, 90% 80%, 50% 100%, 10% 80%);
+  color: var(--clr-4);
+}
 .btn{
   margin-top: 1rem;
   display: inline-block;
@@ -78,6 +84,20 @@ section{
   color: var(--clr-4);
   transition: var(--transition);
 }
+
+.icon{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  font-size: 2.5rem;
+  color: var(--clr-4);
+  left: calc(50% - 1.5rem);
+  bottom: calc(3rem + 0.5rem);
+  background-color: var(--clr-2);
+  border-radius: 50%;
+  border: 0.25rem solid var(--clr-1);
+}
+
 /*
 =============== 
 Header
@@ -93,7 +113,6 @@ Header
   padding: 1rem 6%;
   position: sticky;
   top: 0; left: 0; right: 0;
-  transition: all 2s ease;
   z-index: 10;
 }
 
@@ -427,22 +446,47 @@ Aisles
 
 .aisle-group{
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
 .aisle{
   display: grid;
+  position: relative;
   grid-template-rows: min-content;
   gap: .75rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background: #8ba888;
   border-radius: .5rem;
 }
 
-.aisle img{
-  inline-size: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+.aisle:hover{
+  transform: scale(1.04);
+  transition: var(--transition);
 }
+
+.aisle img{
+  background-color: var(--clr-1);
+  border-radius: .5rem;
+  inline-size: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border: 0.25rem solid var(--clr-1);
+}
+
+
+
+
+.aisle-text{
+  padding-top: 1.5rem;
+  height: 3rem;
+  text-align: center;
+  color: var(--clr-4);
+  letter-spacing: 0.1rem;
+}
+
+
+
 
 /*
 =============== 
@@ -460,15 +504,24 @@ Media queries
     padding: 2rem;
   }
 
+  .aisle-group{
+  grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 @media (max-width:560px) {
+  
   .content{
     grid-template-columns: auto;
   }
 
   .sale, .featured{
     width: 90vw;
+  }
+
+  .aisle-group{
+  grid-template-columns: 1fr;
   }
 }
 
@@ -506,5 +559,5 @@ Media queries
   .home-text{
     margin: 0 3rem;
   }
-
+  
 }
