@@ -22,7 +22,7 @@ Variables
 */
 :root{
   /* colours */
-  --clr-1:#44624a;
+  --clr-1:#45634b;
   --clr-2:#8ba888;
   --clr-3:#c0cfb2;
   --clr-4:#f1ebe1;
@@ -54,13 +54,13 @@ body{
 }
 
 section{
-  padding: 1rem 9%;
+  padding: 2rem 9%;
 }
 
 .section-title{
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
-  padding-bottom: 1.25rem;
+  padding-bottom: 2rem;
 }
 
 .btn{
@@ -320,10 +320,26 @@ Home
   text-align: center;
   background: url("/images/home-bg1.jpg");
   background-size: cover;
-  padding-top: 3rem;
-  padding-bottom: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
 }
 
+.home-text{
+  background: rgba(69, 99, 75, .6);
+  padding: 1rem;
+  margin: 0 10rem;
+  border-radius: .5rem;
+}
+
+.home .section-title{
+  font-size: 2.5rem;
+  color: var(--clr-5);
+}
+
+.home p{
+  color: var(--clr-5);
+  font-size: 1.5rem;
+}
 /*
 =============== 
 Special
@@ -409,8 +425,23 @@ Aisles
 ===============
 */
 
+.aisle-group{
+  display: grid;
+}
+
 .aisle{
+  display: grid;
+  grid-template-rows: min-content;
+  gap: .75rem;
   padding: 1rem;
+  background: #8ba888;
+  border-radius: .5rem;
+}
+
+.aisle img{
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 /*
@@ -470,10 +501,10 @@ Media queries
 
 }
 
-@media (max-width:450px){
+@media (max-width:682px){
 
-  html{
-    font-size: 55%;
+  .home-text{
+    margin: 0 3rem;
   }
 
 }
