@@ -1,9 +1,7 @@
 let searchForm = document.querySelector('.search-form');
-let easter = document.querySelector('.easter a');
 
 document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
-    easter.classList.toggle('active');
 
     cart.classList.remove('active');
     navbar.classList.remove('active');
@@ -39,4 +37,15 @@ document.querySelector('#menu-btn').onclick = () => {
     cart.classList.remove('active');
     login.classList.remove('active');
 }
-// 
+
+
+
+
+
+
+
+
+
+// date
+const date = document.querySelector("#date");
+date.innerHTML = new Date().getFullYear();

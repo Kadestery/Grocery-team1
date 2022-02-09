@@ -98,6 +98,14 @@ section{
   border: 0.25rem solid var(--clr-1);
 }
 
+::-webkit-scrollbar{
+  width: 1.25em;
+}
+::-webkit-scrollbar-thumb{
+  background: var(--clr-1);
+  border-radius: 100vw;
+  border: 0.2rem solid #eee;
+}
 /*
 =============== 
 Header
@@ -483,9 +491,6 @@ Aisles
   border: 0.25rem solid var(--clr-1);
 }
 
-
-
-
 .aisle-text{
   padding-top: 1.5rem;
   height: 3rem;
@@ -496,6 +501,47 @@ Aisles
 
 
 
+
+/*
+=============== 
+Footer
+===============
+*/
+footer{
+  background: #2e302e;
+}
+.copyright{
+  font-size: 1.25rem;
+  color: #eee;
+  padding: 0 0 1rem 1rem;
+}
+
+.footer{
+  display: flex;
+  padding: 3rem 3rem;
+  justify-content: space-evenly;
+}
+
+.team h1,
+.jobs h1,
+.customer h1{
+  color: var(--clr-6);
+  padding-bottom: 2rem;
+}
+
+.team li,
+.team a,
+.jobs li,
+.jobs p,
+.customer li,
+.customer p{
+  color: var(--clr-6);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.team a:hover{
+  text-decoration: underline;
+}
 
 /*
 =============== 
