@@ -152,6 +152,7 @@ Header
   margin-right: .3rem;
   text-align: center;
   width: 4rem;
+  cursor: pointer;
 }
 
 .header .icons div:hover{
@@ -314,21 +315,6 @@ Header
   text-decoration: underline;
 }
 
-/* easter */
-
- .easter a{
-  cursor: default;
-  font-size: 1.5rem;
-  color: var(--clr-4);
-  position: absolute;
-  top: -3rem;
-  z-index: 20;
-}
-.easter a.active{
-  top: 3rem;
-}
-/*  easter */
-
 /*
 =============== 
 Home
@@ -391,6 +377,28 @@ Special
   border-radius: .5rem;
 }
 
+.f-util{
+  display: flex;
+  justify-content: space-between;
+}
+.switch{
+  margin-top: 10rem;
+  margin-right: 1rem;
+}
+.switch i{
+  background: var(--clr-1);
+  font-size: 2.5rem;
+  color: var(--clr-4);
+  margin-left: -2.3rem;
+  border-radius: .5rem;
+  border: 0.2rem solid var(--clr-4);
+  transition: var(--transition) ;
+}
+
+.switch i:hover{
+  color: var(--clr-1);
+  background: var(--clr-4);
+}
 /* sale */
 
 .sale{
@@ -421,6 +429,7 @@ Special
 }
 
 .featured a,
+.featured f-util,
 .sale a{
   margin-top: 8rem;
   margin-left: 3rem;
