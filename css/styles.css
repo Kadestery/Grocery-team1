@@ -49,6 +49,19 @@ html{
   scroll-padding-top: 7rem;
 }
 
+#About-us-background{
+  position: center;
+  height: 700px;
+  width: 50%;
+  margin:auto;
+  background-color:whitesmoke;
+}
+
+#Student-pic{
+  position: static;
+  margin-right: 500px;
+}
+
 body{
   background: #eee;
 }
