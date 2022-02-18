@@ -6,6 +6,7 @@ document.querySelector('#search-btn').onclick = () => {
     cart.classList.remove('active');
     navbar.classList.remove('active');
     login.classList.remove('active');
+    aisle.classList.remove('active');
 }
 
 let cart = document.querySelector('.cart');
@@ -16,6 +17,7 @@ document.querySelector('#cart-btn').onclick = () => {
     searchForm.classList.remove('active');
     navbar.classList.remove('active');
     login.classList.remove('active');
+    aisle.classList.remove('active');
 }
 
 let login = document.querySelector('.login-form');
@@ -26,6 +28,7 @@ document.querySelector('#log-btn').onclick = () => {
     searchForm.classList.remove('active');
     cart.classList.remove('active');
     navbar.classList.remove('active');
+    aisle.classList.remove('active');
 }
 
 let navbar = document.querySelector('.navbar');
@@ -36,6 +39,7 @@ document.querySelector('#menu-btn').onclick = () => {
     searchForm.classList.remove('active');
     cart.classList.remove('active');
     login.classList.remove('active');
+    aisle.classList.remove('active');
 }
 
 let aisle = document.querySelector('.aisles-menu');
