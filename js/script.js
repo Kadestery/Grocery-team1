@@ -52,8 +52,12 @@ document.querySelector('#aisles-btn').onclick = () => {
     login.classList.remove('active');
 }
 
-
-
+//testing stuff for backstore
+/*
+let button = document.querySelector('.btn');
+document.querySelector('#aisles-btn').onclick = () => {
+    button.classList.toggle('active');
+}*/
 
 
 
