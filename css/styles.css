@@ -1078,11 +1078,125 @@ flex-basis: 100%;}
 
 }
 /* More */
+
+/* ---------------new--------------- */
 #more {display: none;}
 
 .prod-dsc{
   font-size: 14px;
 }
+
+
+.cart-page{
+margin: 80px auto;
+}
+
+table{
+width: 100%;
+border-collapse: collapse;
+}
+
+.cart-infof{
+display: flex;
+flex-wrap: wrap;
+}
+
+.checkout td{
+    line-height: 1.75;
+}
+th{
+text-align: left;
+padding: 5px;
+color: #fff;
+background: #268a47;
+font-weight:normal;
+}
+
+td input{
+width: auto;
+height: 30px;
+padding: 5px;
+}
+
+td a{
+color: #268a47;
+font-size: 12px;
+}
+
+td img{
+width: 80px;
+height: 80px;
+margin-right: 10px;
+margin-top: 20px;
+}
+
+.checkout{
+display:flex;
+justify-content: flex-end;
+}
+
+.checkout-col2{
+margin-left: 50px;
+}
+
+.checkout table{
+border-top: 3px solid #268a47;
+width: 300px;
+}
+
+td:last-child{
+    text-align: right;
+    margin-right: 10px;
+}
+
+th:last-child{
+    text-align: right;
+       margin-right: 10px;
+}
+
+.cart-container{
+
+max-width: 888px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+padding-bottom: 55px;
+padding-top: 25px;
+font-size: medium;
+
+}
+
+.checkout-btn{
+    display: inline-block;
+    background: #268a47;
+    color: #fff; 
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 60px;
+    transition: background 0.5s;
+ font-size: x-large;
+}
+
+@media (max-width: 700px) {
+    .checkout-btn{
+ font-size: medium;
+}
+.checkout-col2{
+margin-left: auto;
+}
+
+.cart-container{
+font-size: small;
+
+}
+
+}
+
+.checkout-btn:hover{
+    background: #064704;
+}
+
+
 
 
 /*  This right here serves to put every col-n elements 
