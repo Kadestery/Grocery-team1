@@ -1077,6 +1077,13 @@ flex-basis: 100%;}
   line-height: 22px;}
 
 }
+/* More */
+#more {display: none;}
+
+.prod-dsc{
+  font-size: 14px;
+}
+
 
 /*  This right here serves to put every col-n elements 
 in 2 columns for transitional screens  
