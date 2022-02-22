@@ -867,7 +867,6 @@ Media queries
 ========
 */
 .About-us-background{
-    background-size: contain;
     background-color: whitesmoke;
     background-repeat: no-repeat;
     position: center;
