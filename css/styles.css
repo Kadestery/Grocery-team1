@@ -866,8 +866,15 @@ Media queries
 </About us, responsive>
 ========
 */
-
-@media (max-width: 1240px){
+.About-us-background{
+    background-size: contain;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    position: center;
+    height: 700px;
+    width: 50%;
+    margin:auto;
+@media only screen and (max-width: 700px){
   .About-us-background{
     background-size: contain;
     background-color: whitesmoke;
