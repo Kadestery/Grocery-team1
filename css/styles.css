@@ -868,7 +868,7 @@ Media queries
 */
 .About-header{
   text-align: center;
-  font-size: 10vw;
+  font-size: 2vw;
 }
 
 .About-us-background{
@@ -879,7 +879,7 @@ Media queries
   width: 50%;
   margin:auto;
   text-align: center;
-  font-size: 10vw;
+  font-size: 2vw;
 }
   
   .Student-pic{
