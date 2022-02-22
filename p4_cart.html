@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+
+    <!-- boxicon link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- import css -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
+        <!-- menu -->
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#aisles" id="aisles-btn">Aisles</a>
+            <a href="about.html">about us</a>
+        </nav>
+        <div class="aisles-menu">
+            <a href="./under construction.html">Vegetables</a>
+            <a href="./p2_fruitaisle.html">Fruits</a>
+            <a href="./under construction.html">Dairy</a>
+            <a href="./under construction.html">Meat</a>
+            <a href="./under construction.html">Pastry</a>
+            <a href="./under construction.html">Snacks</a>
+            <a href="./under construction.html">Seafood</a>
+            <a href="./under construction.html">Water</a>
+        </div>
+        <!-- buttons -->
+        <div class="icons">
+            <div class='bx bx-menu-alt-right' id="menu-btn"></div>
+            <div class='bx bx-search-alt' id="search-btn"></div>
+            <div class='bx bx-cart' id="cart-btn"></div>
+            <div class='bx bx-log-in-circle' id="log-btn"></div>
+        </div>
+        <!-- search -->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search...">
+            <label for="search-box" class="bx bx-search-alt"></label>
+        </form>
+        <!-- cart -->
+        <div class="cart">
+            <div class="box">
+                <i class='bx bx-trash'></i>
+                <img src="./images/k.jpg" alt="">
+                <div class="content">
+                    <h3>Name</h3>
+                    <span class="price">price$</span>
+                    <span class="quantity">qty: variable</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class='bx bx-trash'></i>
+                <img src="./images/k.jpg" alt="">
+                <div class="content">
+                    <h3>name</h3>
+                    <span class="price">price$</span>
+                    <span class="quantity">qty: variable</span>
+                </div>
+            </div>
+            <div class="total">total: totalPrice$</div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        <!-- login -->
+        <form action="" class="login-form">
+            <h3>log in</h3>
+            <input type="email" placeholder="enter email" class="box">
+            <input type="password" placeholder="enter password" class="box">
+            <p>forgot your password? click <a
+                    href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf"
+                    target="_blank">here</a>
+                (click)</p>
+            <p>sorry but I don't have an account... <a href="#">CLICK HERE</a></p>
+            <a href="p7_backstore.html">
+                <!-- <input type="submit" value="log in now" class="btn">       for now we're using text for convenience's sake-->
+                <input type="text" value="log in now" class="btn">
+            </a>
+        </form>
+    </header>
+
+    <main>
+
+
+        <!------ cart items details --------->
+        <div class="cart-container">
+            <table>
+                <tr class="cart-topbar">
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/apple.jpg">
+                            <div>
+                                <p>Apple</p>
+                                <small>Price: $1.05/unit</small>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$1.05</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/cucumber.jpg">
+                            <div>
+                                <p>English Cucumber</p>
+                                <small>Price: $5.00/pack</small>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="3"></td>
+                    <td>$15.00</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./images/banana.jpg">
+                            <div>
+                                <p>Bananas</p>
+                                <small>Price: $0.30/unit</small>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="10"></td>
+                    <td>$3.00</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+
+            <div class="checkout">
+                <div class="checkout-col2">
+                    <a href="" class="checkout-btn">Check Out Now</a>
+                </div>
+
+
+                <div class="checkout-col2">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$9.05</td>
+                        </tr>
+
+                        <!-- fresh produce are tax free but we'll pretend 
+    like they have tax for the sake of assignment -->
+
+                        <tr>
+                            <td>GST</td>
+                            <td>$0.45</td>
+                        </tr>
+                        <tr>
+                            <td>QST</td>
+                            <td>$0.90</td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>Total</td>
+                            <td>$10.40</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="team">
+                <ul>
+                    <h1>Our team</h1>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/ali-fetanat-42216521b/">Ali Fetanat</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="">Elliot Vinet</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/gabriel-dubois-soen/">Gabriel Dubois</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="">Kade Keating</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="">Minh Thuan Huynh</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://ca.linkedin.com/in/xavier-guertin-b896a71a6">Xavier Guertin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="jobs">
+                <h1>Jobs</h1>
+                <ul>
+                    <li>
+                        <p>Jobs in stores</p>
+                    </li>
+                    <li>
+                        <p>Careers at head office</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="customer">
+                <h1>Customer service</h1>
+                <ul>
+                    <li>
+                        <p>Contact us</p>
+                    </li>
+                    <li>
+                        <p>Terms and conditions</p>
+                    </li>
+                    <li>
+                        <p>Privacy policy</p>
+                    </li>
+                    <li>
+                        <p>Find a store</p>
+                    </li>
+                    <li>
+                        <p>FAQ</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="date"></span>. all rights reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
