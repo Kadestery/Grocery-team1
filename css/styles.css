@@ -868,21 +868,24 @@ Media queries
 */
 .About-header{
   text-align: center;
+  font-size: 10vw;
 }
 
 .About-us-background{
-    background-color: whitesmoke;
-    background-repeat: no-repeat;
-    position: center;
-    height: 700px;
-    width: 50%;
-    margin:auto;
+  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  position: center;
+  height: 700px;
+  width: 50%;
+  margin:auto;
+  text-align: center;
+  font-size: 10vw;
 }
   
   .Student-pic{
-    position: static;
-    margin-right: 500px;
- }
+  position: static;
+  margin-right: 500px;
+}
 
 /*
 =============== 
