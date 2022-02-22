@@ -886,7 +886,7 @@ Media queries
   .Student-pic{
     position: static;
     margin-right: 500px;
-    max-width: 500px;
+    max-width: 100%;
 }
 
 /*
