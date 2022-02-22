@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aisles page</title>
+    <title>Cucumber page</title>
 
     <!-- boxicon link -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +21,7 @@
         <a href="#" class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
         <!-- menu -->
         <nav class="navbar">
-            <a href="index.html">home</a>
+            <a href="./index.html">home</a>
             <a href="#aisles" id="aisles-btn">Aisles</a>
             <a href="about.html">about us</a>
         </nav>
@@ -86,32 +86,67 @@
     <!-- END OF HEADER -->
 
     <main>
+        <!-- details of single product  -->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/cucumber.jpg" width="100%" id="ProductImg">
+                </div>
+
+
+                <div class="col-2">
+                    <h2><a href="./index.html">Home</a>/<a href="./p2_fruitaisle.html">Fruits</a>/Cucumber</h2>
+                    <h1>Cucumber</h1>
+                    <h4>$5.00/pack</h4>
+                    <br>
+                    <input type="number" value="1">
+
+                    <a href="" class="btn">Add To Cart</a>
+                    <br>
+                    <h2 class="proddetail">Product Details <i class="fa fa-indent"></i></h2>
+                    <p>Local, ethically sourced and any other adjective the marketing team can think of</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
         <!-- product list -->
-        <section class="products">
-            <h1 class="section-title"><span>Our Fresh Fruits</span></h1>
-            <ul class="product-group">
+        <section>
+            <h1 class="section-title"><span>Similar Offerings</span></h1>
 
-                <li class="products">
-                    <a href="p3_genericproduct.html">
-                        <i class="bx bx-chevron-right icon"></i>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Honeycrisp-Apple.jpg/1327px-Honeycrisp-Apple.jpg"
-                            alt="honeycrisp apple">
-                        <h2 class="product-text">Honeycrisp Apple</h2>
-                    </a>
-                </li>
+            <!-- the files path will have to be changed -->
+            <div class="row2">
 
-                <!-- placeholder -->
-                <li class="products">
-                    <a href="#">
-                        <i class="bx bx-chevron-right icon"></i>
-                        <i class="bx bx-chevron-right icon"></i>
-                        <img src="img" alt="">
-                        <h2 class="product-text">generic</h2>
-                    </a>
-                </li>
+                <div class="col-5">
+                    <div class="product">
+                        <a href="./p3_banana.html">
+                            <img src="./images/banana.jpg" alt="Banana">
+                            <h4 class="aisle-text">Bananas</h4>
+                            <p class="aisle-text">$0.30/unit</p>
+                        </a>
+                    </div>
+                </div>
 
-            </ul>
+
+                <div class="col-5">
+                    <div class="product">
+                        <a href="./p3_honeycrisp.html">
+                            <img src="./images/apple.jpg" alt="Honeycrisp Apple">
+                            <h4 class="aisle-text">Honeycrisp Apples</h4>
+                            <p class="aisle-text">$1.05/unit</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
         </section>
+
+
     </main>
 
 

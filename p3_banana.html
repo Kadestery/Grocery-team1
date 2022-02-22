@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sample_apple</title>
+    <title>Banana page</title>
 
     <!-- boxicon link -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +21,7 @@
         <a href="#" class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
         <!-- menu -->
         <nav class="navbar">
-            <a href="index.html">home</a>
+            <a href="./index.html">home</a>
             <a href="#aisles" id="aisles-btn">Aisles</a>
             <a href="about.html">about us</a>
         </nav>
@@ -86,29 +86,70 @@
     <!-- END OF HEADER -->
 
     <main>
+        <!-- details of single product  -->
 
-        <section class="product-image">
-            <h1 class="Product name"><span> Honeycrisp Apple </span></h1>
-            <hr>
-            <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Honeycrisp-Apple.jpg/1327px-Honeycrisp-Apple.jpg"
-                    alt="placeholder">
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./images/banana.jpg" width="100%" id="ProductImg">
+                </div>
+
+
+                <div class="col-2">
+                    <h2><a href="./index.html">Home</a>/<a href="./p2_fruitaisle.html">Fruits</a>/Banana</h2>
+                    <h1>Bananas</h1>
+                    <h4>$0.30/unit</h4>
+                    <br>
+                    <input type="number" value="1">
+
+                    <a href="" class="btn">Add To Cart</a>
+                    <br>
+                    <h2 class="proddetail">Product Details <i class="fa fa-indent"></i></h2>
+                    <p>Local, ethically sourced and any other adjective the marketing team can think of</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- product list -->
+        <section>
+            <h1 class="section-title"><span>Similar Offerings</span></h1>
+
+            <!-- the files path will have to be changed -->
+            <div class="row2">
+
+                <div class="col-5">
+                    <div class="product">
+                        <a href="./p3_cucumber.html">
+                            <img src="./images/cucumber.jpg" alt="Cucumber">
+
+                            <h4 class="aisle-text">English Cucumbers</h4>
+                            <p class="aisle-text">$5.00/pack</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-5">
+                    <div class="product">
+                        <a href="./p3_honeycrisp.html">
+                            <img src="./images/apple.jpg" alt="Honeycrisp Apple">
+                            <h4 class="aisle-text">Honeycrisp Apples</h4>
+                            <p class="aisle-text">$1.05/unit</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
             </div>
 
         </section>
 
-        <!-- I'd put the description of a product on the bottom and then the add to cart functions on top -->
-        <aside class="buyer-interface">
-            placeholder for the buying interface
-            we'd need a select quantity and a add to cart button
-        </aside>
-
-        <div class="product-description">
-            <p>these honeycrisp apples were carefuly handpicked by local quebec farmers</p>
-        </div>
-
 
     </main>
+
 
     <footer>
         <div class="footer">
