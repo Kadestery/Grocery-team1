@@ -103,8 +103,8 @@ section{
   color: var(--clr-4);
   transition: var(--transition);
 }
-Testing out stuff for scripts
-*/
+Testing out stuff for scripts*/
+
 
 .icon{
   padding: 0;
@@ -687,6 +687,96 @@ Products
 
 
 /*
+===================
+Backstore styling
+===================
+*/
+.backstore-forms{
+  text-align: left;
+  margin: 50px;
+  display: grid;
+  position: relative;
+  grid-template-rows: min-content;
+  gap: .75rem;
+  padding: 1.5rem;
+  border-style:solid;
+  border-radius: .5rem;
+}
+
+.backstore-forms.checked{
+  margin: 50px;
+  display: grid;
+  position: relative;
+  grid-template-rows: min-content;
+  gap: .75rem;
+  padding: 1.5rem;
+  border-style:solid;
+  border-radius: .5rem;
+  background: #8ba888;
+  
+}
+
+
+.backstore-forms:hover{
+  margin: 50px;
+  display: grid;
+  position: relative;
+  grid-template-rows: min-content;
+  gap: .75rem;
+  padding: 1.5rem;
+  border-style:solid;
+  background: #8ba888;
+  transform: scale(1.04);
+  transition: var(--transition);
+}
+
+.backstore-navigation-buttons{
+  margin-top: 50px;
+  position: static;
+  text-align: center;
+}
+
+.backstore-editing-buttons{
+  margin-bottom: 50px;
+  position: static;
+  text-align: center;
+}
+
+.bs-header{
+  text-align: center;
+  font-size: 1cm;
+}
+
+.bs-checkbox{
+  position:static;
+  margin: 20px;
+  
+}
+
+.bs-form-text{
+  position: absolute;
+  margin-left: 10px;
+  top: 25%;
+}
+
+.bs-add{
+  font-size: 0.75cm;
+  margin-top: 20px;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.data-entering{
+  margin-left: 15px;
+  width: 1000px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color:#dfd7cc88;
+  font-size: 0.75cm;
+  text-align: left;
+  
+}
+/*
 =============== 
 Media queries
 ===============
@@ -764,6 +854,14 @@ Media queries
   
 }
 
+
+/*
+========
+</Gabriel>
+========
+*/
+
+=======
 @media (max-width: 767px){
   #About-us-background{
   position: center;
@@ -774,8 +872,5 @@ Media queries
   }
 }
 
-/*
-========
-</Gabriel>
-========
-*/
+
+

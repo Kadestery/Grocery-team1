@@ -53,11 +53,23 @@ document.querySelector('#aisles-btn').onclick = () => {
 }
 
 //testing stuff for backstore
-/*
-let button = document.querySelector('.btn');
-document.querySelector('#aisles-btn').onclick = () => {
-    button.classList.toggle('active');
+
+/*let checklist = document.querySelector('.backstore-forms');
+document.querySelector('#product').onclick = () => {
+    checklist.classList.toggle('checked');
 }*/
+
+function backstoreStyling(){
+    var checkBox = document.getElementById("product");
+    var box = document.getElementById("productBox");
+
+    if(checkBox.checked == true){
+        box.classList.value = "backstore-forms checked";
+    } else {
+        box.classList.value = "backstore-forms";
+    }
+}
+
 
 
 
