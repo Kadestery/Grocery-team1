@@ -869,16 +869,18 @@ Media queries
 
 @media (max-width: 1240px){
   .About-us-background{
-  position: center;
-  height: 700px;
-  width: 50%;
-  margin:auto;
-  background-color:whitesmoke;
+    background-size: contain;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    position: center;
+    height: 70vh;
+    width: 500px;
+    margin:auto;
   }
   
   .Student-pic{
-  position: static;
-  margin-right: 500px;
+    position: static;
+    margin-right: 500px;
   }
 }
 
