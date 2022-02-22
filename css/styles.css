@@ -1,3 +1,10 @@
+
+/*
+========
+<Gabriel>
+========
+*/
+
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik:wght@300;400;500;600&display=swap');
 
@@ -584,8 +591,16 @@ footer{
   text-decoration: underline;
 }
 /*
-======
-Minh
+========
+</Gabriel>
+========
+*/
+
+
+/*
+========
+<Minh>
+========
 */
 .small-container{
     max-width: 1080px;
@@ -657,6 +672,18 @@ Products
   letter-spacing: 0.1rem;
 }
 
+/*
+========
+</Minh>
+========
+*/
+
+
+/*
+========
+<Gabriel>
+========
+*/
 
 
 /*
@@ -747,3 +774,8 @@ Media queries
   }
 }
 
+/*
+========
+</Gabriel>
+========
+*/
