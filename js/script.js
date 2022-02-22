@@ -52,7 +52,7 @@ document.querySelector('#aisles-btn').onclick = () => {
     login.classList.remove('active');
 }
 
-//testing stuff for backstore
+//testing stuffs for backstore
 
 /*let checklist = document.querySelector('.backstore-forms');
 document.querySelector('#product').onclick = () => {
