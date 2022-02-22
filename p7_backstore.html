@@ -87,6 +87,7 @@
         </form>
     </header>
     <!-- END OF HEADER -->
+    <div class="backstore-navigation-buttons">
     <a href="p7_backstore.html">
     <div class="btn">
         <label for="manageproducts">Manage products</label>
@@ -107,40 +108,53 @@
         <input type="button" id="manageorders" name="manageorders">
     </div>
     </a>
+</div>
 
+<div>
+    <h1 class="bs-header"></br>Product Inventory
 
-    <h1>Grocery Checklist
-    <form action = ""> <p>
-    <label> <input type = "checkbox" name ="groceries[]"
-    value = "apple" id="product"/>
-    Apple </label></p>
-    <p>
-    <label> <input type = "checkbox" name ="groceries[]"
-    value = "bread" id="product"/>
-    Bread </label></p>
-    <p>
-    <label> <input type = "checkbox" name ="groceries[]"
-    value= "eggs" id="product"/>
-    Eggs </label>
-    </p>
+    <form action = "" class = "backstore-forms" id="productBox"> <p>
+    <input class="bs-checkbox" type = "checkbox" name ="products[]"
+    value = "apple" id="product" onclick="backstoreStyling()"/>
+    <label class="bs-form-text"> Apple </label></p>
     </form>
+
+    <form action = "" class = "backstore-forms" id="productBox"> <p>
+    <input class="bs-checkbox" type = "checkbox" name ="products[]"
+    value = "Banana" id="product" onclick="backstoreStyling()"/>
+    <label class="bs-form-text"> Banana </label></p>
+    </form>
+
+    <form action = "" class = "backstore-forms" id="productBox"> <p>
+    <input class="bs-checkbox" type = "checkbox" name ="products[]"
+    value = "Cucumber" id="product" onclick="backstoreStyling()"/>
+    <label class="bs-form-text"> Cucumber </label></p>
+    </form>
+
     </h1>
+</div>
 
-
+<div class="backstore-editing-buttons">
+    <a href="p8_addproduct.html">
     <div class="btn">
         <label for="additm">Add product</label>
         <input type="button" id="additm" name="additm">    
     </div>
+    </a>
 
     <div class="btn">
         <label for="deleteitm">Delete product</label>
         <input type="button" id="deleteitm" name="deleteitm">
     </div>
 
+    <a href="p8_editproduct.html">
     <div class="btn">
+        
         <label for="edititm">Edit product</label>
         <input type="button" id="edititm" name="edititm">
     </div>
+    </a>
+</div>
     
     
 
