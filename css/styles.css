@@ -866,6 +866,10 @@ Media queries
 </About us, responsive>
 ========
 */
+.About-header{
+  text-align: center;
+}
+
 .About-us-background{
     background-color: whitesmoke;
     background-repeat: no-repeat;
@@ -873,12 +877,12 @@ Media queries
     height: 700px;
     width: 50%;
     margin:auto;
+}
   
   .Student-pic{
     position: static;
     margin-right: 500px;
-  }
-}
+ }
 
 /*
 =============== 
