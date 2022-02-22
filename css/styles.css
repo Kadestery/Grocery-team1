@@ -875,13 +875,12 @@ Media queries
   background-color: whitesmoke;
   background-repeat: no-repeat;
   position: center;
-  height: 700px;
+  height: 50%;
   width: 50%;
   margin:auto;
   margin-bottom: 5%;
   text-align: center;
   font-size: 1vw;
-  max-height: 700px;
 }
   
   .Student-pic{
