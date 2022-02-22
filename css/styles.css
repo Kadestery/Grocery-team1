@@ -881,6 +881,7 @@ Media queries
   margin-bottom: 5%;
   text-align: center;
   font-size: 1vw;
+  max-height: 100%;
 }
   
   .Student-pic{
