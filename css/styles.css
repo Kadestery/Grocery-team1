@@ -885,8 +885,6 @@ Media queries
   
   .Student-pic{
     position: static;
-    width: 700px;
-    height: 500px;
     margin-right: 500px;
 }
 
