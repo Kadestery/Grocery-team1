@@ -43,6 +43,7 @@ Global
 */
 
 html{
+  background: #2e302e;
   font-size: 70%;
   overflow-x: hidden;
   scroll-behavior: smooth;
