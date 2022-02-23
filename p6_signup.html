@@ -13,6 +13,13 @@
     <!-- import css -->
     <link rel="stylesheet" href="./css/styles.css">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
+    <script>
+        $(function() {
+            $('#footer').load("./assets/php/footer.html");
+        });
+    </script>
+
     <style>
         label {
             display: block;
@@ -35,11 +42,11 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
-        <a href="#home" class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
+     <header class="header">
+        <a href="./index.html " class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
         <!-- menu -->
         <nav class="navbar">
-            <a href="#home">home</a>
+            <a href="./index.html">home</a>
             <a href="#aisles" id="aisles-btn">Aisles</a>
             <a href="./about.html">about us</a>
             <a href="./p7_backstore.html">Backstore</a>
@@ -96,14 +103,16 @@
             <h3>log in</h3>
             <input type="email" placeholder="enter email" class="box">
             <input type="password" placeholder="enter password" class="box">
+            <br>
             <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf"
                 target="_blank">forgot your password?</a>
 
-            <a href="./p6_signup.html">I don't have an account</a>
+            <a href="./p6_signup.html">Create An Account</a>
             <a href="#" class="btn"> Login Now </a>
         </form>
     </header>
-    <!-- END OF HEADER -->
+    <!--END OF HEADER-->
+
 
     <main>
 
@@ -132,65 +141,10 @@
     </main>
 
 
-    <footer>
-        <div class="footer">
-            <div class="team">
-                <ul>
-                    <h1>Our team</h1>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/ali-fetanat-42216521b/">Ali Fetanat</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="">Elliot Vinet</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/gabriel-dubois-soen/">Gabriel Dubois</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="">Kade Keating</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="">Minh Thuan Huynh</a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://ca.linkedin.com/in/xavier-guertin-b896a71a6">Xavier Guertin</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="jobs">
-                <h1>Jobs</h1>
-                <ul>
-                    <li>
-                        <p>Jobs in stores</p>
-                    </li>
-                    <li>
-                        <p>Careers at head office</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="customer">
-                <h1>Customer service</h1>
-                <ul>
-                    <li>
-                        <p>Contact us</p>
-                    </li>
-                    <li>
-                        <p>Terms and conditions</p>
-                    </li>
-                    <li>
-                        <p>Privacy policy</p>
-                    </li>
-                    <li>
-                        <p>Find a store</p>
-                    </li>
-                    <li>
-                        <p>FAQ</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <p class="copyright">&copy; <span id="date"></span>. all rights reserved</p>
-    </footer>
+    <!---- Footer --->
+        <div id="footer"></div>
+    <!-End Of Footer->
+
     <script src="js/script.js"></script>
 </body>
 
