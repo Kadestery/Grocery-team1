@@ -115,6 +115,9 @@ Testing out stuff for scripts*/
   border-radius: 100vw;
   border: 0.2rem solid #eee;
 }
+::-webkit-scrollbar-track{
+  background: #eee;
+}
 /*
 =============== 
 Header
