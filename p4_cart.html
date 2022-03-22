@@ -97,7 +97,13 @@
         </form>
     </header>
     <!--END OF HEADER-->
-
+ <script>
+                        myCounterA = localStorage.getItem('myCounterA');
+                        if (myCounterA == null) myCounterA = 0;
+                        myCounterA = (parseInt(myCounterA) + (input-1));
+                        localStorage.setItem('myCounterA', myCounterA);
+                        document.getElementById("appleCounter").value = localStorage.getItem('myCounterA');
+                    </script>
 
     <main>
 
@@ -123,13 +129,6 @@
                         </div>
                     </td>
                     <td><input id="appleCounter" type="text" value="1"></td>
-                    <script>
-                        myCounterA = localStorage.getItem('myCounterA');
-                        if (myCounterA == null) myCounterA = 0;
-                        myCounterA = (parseInt(myCounterA) + (input-1));
-                        localStorage.setItem('myCounterA', myCounterA);
-                        document.getElementById("appleCounter").value = localStorage.getItem('myCounterA');
-                    </script>
                     <td>$1.05</td>
                 </tr>
 
