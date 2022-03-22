@@ -122,7 +122,14 @@
                             </div>
                         </div>
                     </td>
-                    <td><input type="number" value="1"></td>
+                    <td><input id="appleCounter" type="number" value="1"></td>
+                    <script>
+                        myCounterA = localStorage.getItem('myCounterA');
+                        if (myCounterA == null) myCounterA = 0;
+                        myCounterA = (parseInt(myCounterA) + (input-1));
+                        localStorage.setItem('myCounterA', myCounterA);
+                        document.getElementById("appleCounter").value = localStorage.getItem('myCounterA');
+                    </script>
                     <td>$1.05</td>
                 </tr>
 
