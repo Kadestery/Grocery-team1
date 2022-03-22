@@ -99,12 +99,19 @@
     <!--END OF HEADER-->
     
  <!--Refresh counter for apples-->   
- <script>
- myCounterA = localStorage.getItem('myCounter');
- if (myCounterA == null) myCounterA = 0;
- myCounterA = parseInt(myCounterA) + 1;
- localStorage.setItem('myCounter', myCounterA);
- document.getElementById("appleCounter").value = localStorage.getItem('myCounter');
+ <script type="text/javascript">
+     document.getElementById("appleCounter").value = getSavedValue("appleCounter");
+     function saveValue(e){
+         var id = e.id;
+         var val = e.value;
+         localStorage.setItem(id, val);
+     }
+     function getSavedValue(v){
+         if (!localStorage.getItem(v)){
+             return "1";
+         }
+         return localStorage.getItem(v);
+     }
  </script>
 
     <main>
@@ -130,7 +137,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><input type="text" id="appleCounter"></td>
+                    <td><input type="text" id="appleCounter" onkeyup='saveValue(this);'></td>
                     <td>$1.05</td>
                 </tr>
 
