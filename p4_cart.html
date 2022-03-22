@@ -97,13 +97,15 @@
         </form>
     </header>
     <!--END OF HEADER-->
+    
+ <!--Refresh counter for apples-->   
  <script>
-                        myCounterA = localStorage.getItem('myCounterA');
-                        if (myCounterA == null) myCounterA = 0;
-                        myCounterA = parseInt(myCounterA);
-                        localStorage.setItem('myCounterA', myCounterA);
-                        document.getElementById("appleCounter").value = localStorage.getItem('myCounterA');
-                    </script>
+ myCounterA = localStorage.getItem('myCounterA');
+ if (myCounterA == null) myCounterA = 0;
+ myCounterA = parseInt(myCounterA);
+ localStorage.setItem('myCounterA', myCounterA);
+ document.getElementById("appleCounter").value = localStorage.getItem('myCounterA');
+ </script>
 
     <main>
 
