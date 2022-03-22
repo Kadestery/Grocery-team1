@@ -100,7 +100,7 @@
  <script>
                         myCounterA = localStorage.getItem('myCounterA');
                         if (myCounterA == null) myCounterA = 0;
-                        myCounterA = (parseInt(myCounterA) + (input-1));
+                        myCounterA = parseInt(myCounterA);
                         localStorage.setItem('myCounterA', myCounterA);
                         document.getElementById("appleCounter").value = localStorage.getItem('myCounterA');
                     </script>
