@@ -59,23 +59,25 @@ document.querySelector('#product').onclick = () => {
     checklist.classList.toggle('checked');
 }*/
 
-function backstoreStyling(){
+function backstoreStyling() {
     var checkBox = document.getElementById("product");
     var box = document.getElementById("productBox");
 
-    if(checkBox.checked == true){
+    if (checkBox.checked == true) {
         box.classList.value = "backstore-forms checked";
     } else {
         box.classList.value = "backstore-forms";
     }
 }
 
+// Price
+var type = document.querySelector('.product-price span').innerHTML;
 
+function updatePrice() {
+    var quantity = document.getElementById("quantity").value;
+    var unitPrice = parseFloat(document.querySelector("#unitPrice").innerHTML);
+    console.log(type);
+    total = (quantity * unitPrice).toFixed(2);
+    return document.querySelector(".product-price").innerHTML = '$' + total + ' for ' + quantity + ' ' + type + '(s)';
+}
 
-
-
-
-
-// date
-const date = document.querySelector("#date");
-date.innerHTML = new Date().getFullYear();

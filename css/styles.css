@@ -619,6 +619,7 @@ col-5 img{
     align-items: center;
     flex-wrap: wrap;
     justify-content: left;
+    gap: 0.5rem;
 }
 
 .P3cartbtn{
@@ -819,7 +820,7 @@ Media queries
   }
 }
 
-@media (max-width:520px){
+@media (max-width:605px){
 
   #menu-btn{
     display: inline-block;
@@ -1276,9 +1277,9 @@ font-size: small;}
 
 }
 
-
-
-
+.product-price {
+  text-transform: none;
+}
 
 /*  This right here serves to put every col-n elements 
 in 2 columns for transitional screens  

@@ -12,13 +12,14 @@
 
     <!-- import css -->
     <link rel="stylesheet" href="./css/styles.css">
-    
+
     <!-- favicon (title of page image) -->
     <link rel="icon" href="/images/favicon.JPG" sizes="32x32" type="image/JPG">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60="
+        crossorigin "anonymous"></script>
     <script>
-        $(function() {
+        $(function () {
             $('#footer').load("./assets/php/footer.html");
         });
     </script>
@@ -27,7 +28,7 @@
 
 <body>
     <!-- Header -->
-     <header class="header">
+    <header class="header">
         <a href="./index.html " class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
         <!-- menu -->
         <nav class="navbar">
@@ -111,10 +112,11 @@
                 <div class="col-2">
                     <h2><a href="./index.html">Home</a>/<a href="./p2_PastryAisle.html">Pastry</a>/Strudel</h2>
                     <h1>Raspberry Strudel</h1>
-                    <h4>$2.00/unit</h4>
+                    <h4 style="display: none;" id="unitPrice">2.00</h4>
+                    <h4 class="product-price">$2.00 /<span>unit</span>
+                    </h4>
                     <br>
-                    <input type="number" value="1">
-
+                    <input id="quantity" type="number" min="0" value="1" onchange="updatePrice()">
                     <a href="" class="btn">Add To Cart</a>
                     <br>
                     <h2 class="proddetail">Product Details <i class="fa fa-indent"></i></h2>
@@ -171,10 +173,10 @@
 
 
     <!---- Footer --->
-        <div id="footer"></div>
+    <div id="footer"></div>
     <!-End Of Footer->
 
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
 
         <script>    function myFunction() {
                 var dots = document.getElementById("dots");
@@ -191,7 +193,7 @@
                     moreText.style.display = "inline";
                 }
             }</script>
-            
+
 </body>
 
 </html>
