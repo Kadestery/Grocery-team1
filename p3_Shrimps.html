@@ -117,7 +117,7 @@
                     <h4 class="product-price">$8.97 /<span>bag</span>
                     </h4>
                     <br>
-                    <input id="quantity" type="number" min="0" value="1" onchange="updatePrice()"> <a href=""
+                    <input id="quantity" type="number" min="0" value="1" onchange="updatePrice();saveValue(this)"> <a href=""
                         class="btn">Add To Cart</a>
                     <br>
                     <h2 class="proddetail">Product Details <i class="fa fa-indent"></i></h2>
@@ -192,7 +192,27 @@
                     moreText.style.display = "inline";
                 }
             }</script>
-
+        <script type="text/javascript">
+            document.querySelector(".product-price").innerHTML = updatePrice2(getSavedValue("quantity"));    // set the value to this input
+            document.getElementById("quantity").value = getSavedValue("quantity");
+            //Save the value function - save it to localStorage as (ID, VALUE)
+            function saveValue(e){
+                var id = e.id;  // get the sender's id to save it . 
+                var val = e.value; // get the value. 
+                localStorage.setItem(id, val);// Every time user writing something, the localStorage's value will override . 
+                var unitPrice = parseFloat(document.querySelector(".product-price").innerHTML);
+                localStorage.setItem('product-price',unitPrice);
+            }
+    
+            //get the saved value function - return the value of "v" from localStorage. 
+            function getSavedValue  (v){
+                if (!localStorage.getItem(v)) {
+                    return 0; 
+                }
+                return localStorage.getItem(v);
+                
+            }
+        </script>
 </body>
 
 </html>

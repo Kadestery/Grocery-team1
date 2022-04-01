@@ -80,6 +80,13 @@ function updatePrice() {
     total = (quantity * unitPrice).toFixed(2);
     return document.querySelector(".product-price").innerHTML = '$' + total + ' for ' + quantity + ' ' + type + '(s)';
 }
+function updatePrice2(v) {
+    var quantity = v;
+    var unitPrice = parseFloat(document.querySelector("#unitPrice").innerHTML);
+    console.log(type);
+    total = (quantity * unitPrice).toFixed(2);
+    return document.querySelector(".product-price").innerHTML = '$' + total + ' for ' + quantity + ' ' + type + '(s)';
+}
 
 // Cart
 
