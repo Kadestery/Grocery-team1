@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DocTYPE html>
 <html lang="en">
 
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
+    <title>Fifty Ten</title>
 
     <!-- boxicon link -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -17,10 +17,9 @@
     <!-- favicon (title of page image) -->
     <link rel="icon" href="/images/favicon.JPG" sizes="32x32" type="image/JPG">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60="
-        crossorigin "anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
     <script>
-        $(function () {
+        $(function() {
             $('#footer').load("./assets/php/footer.php");
         });
     </script>
@@ -28,8 +27,6 @@
 </head>
 
 <body>
-    <!-- not sure how many aisles and products we have to fully create so here's a page to redirect to if we dont actually have to create a page for some url -->
-
     <!-- Header -->
     <header class="header">
         <a href="./index.php " class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
@@ -93,32 +90,89 @@
             <input type="email" placeholder="enter email" class="box">
             <input type="password" placeholder="enter password" class="box">
             <br>
-            <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf"
-                target="_blank">forgot your password?</a>
+            <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf" target="_blank">forgot your password?</a>
 
             <a href="./p6_signup.php">Create An Account</a>
             <a href="#" class="btn"> Login Now </a>
         </form>
     </header>
     <!--END OF HEADER-->
+    <div class="backstore-navigation-buttons">
+        <a href="p7_backstore.php">
+            <div class="btn">
+                <label for="manageproducts">Manage products</label>
+                <input type="button" id="manageproducts" name="manageproducts">
+            </div>
+        </a>
 
+        <a href="p9_backstoreusers.php">
+            <div class="btn">
+                <label for="manageusers">Manage users</label>
+                <input type="button" id="manageusers" name="manageusers">
+            </div>
+        </a>
 
-    <main>
-        <div class="under-construction-msg">
-            <h1> This page is being built</h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0jdRusVq321xZjr9N9suat9sWz9SirkSBEdAxvgQ3NHm1LJn64s5fV69DWs6owusG04&usqp=CAU"
-                alt="yellow under construction sign">
-            <p> our team is working tirelessly to improve your experience</p>
+        <a href="p11_backstoreorders.php">
+            <div class="btn">
+                <label for="manageorders">Manage orders</label>
+                <input type="button" id="manageorders" name="manageorders">
+            </div>
+        </a>
+    </div>
 
+    <div>
+        <h1 class="bs-header"></br>Order List
+
+            <form action="" class="backstore-forms" id="productBox">
+                <p>
+                    <input class="bs-checkbox" type="checkbox" name="products[]" value="orde1" id="product" onclick="backstoreStyling()" />
+                    <label class="bs-form-text"> Order No. 1 </label>
+                </p>
+            </form>
+
+            <form action="" class="backstore-forms" id="productBox">
+                <p>
+                    <input class="bs-checkbox" type="checkbox" name="products[]" value="order2" id="product" onclick="backstoreStyling()" />
+                    <label class="bs-form-text"> Order No. 2 </label>
+                </p>
+            </form>
+
+            <form action="" class="backstore-forms" id="productBox">
+                <p>
+                    <input class="bs-checkbox" type="checkbox" name="products[]" value="order3" id="product" onclick="backstoreStyling()" />
+                    <label class="bs-form-text"> Order No. 3</label>
+                </p>
+            </form>
+
+        </h1>
+    </div>
+
+    <div class="backstore-editing-buttons">
+        <a href="p12_addorder.php">
+            <div class="btn">
+                <label for="addorder">Add order</label>
+                <input type="button" id="addorder" name="addorder">
+            </div>
+        </a>
+
+        <div class="btn">
+            <label for="deleteorder">Delete order</label>
+            <input type="button" id="deleteorder" name="deleteorder">
         </div>
-    </main>
+
+        <a href="p12_editorder.php">
+            <div class="btn">
+                <label for="editorder">Edit order</label>
+                <input type="button" id="editorder" name="editorder">
+            </div>
+        </a>
+    </div>
 
     <!---- Footer --->
     <div id="footer"></div>
     <!-End Of Footer->
 
         <script src="js/script.js"></script>
-
 </body>
 
 </html>

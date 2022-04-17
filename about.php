@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DocTYPE html>
 <html lang="en">
 
@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-
+    <title>Fifty Ten | About</title>
     <!-- boxicon link -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -17,10 +16,9 @@
     <!-- favicon (title of page image) -->
     <link rel="icon" href="/images/favicon.JPG" sizes="32x32" type="image/JPG">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60="
-        crossorigin "anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
     <script>
-        $(function () {
+        $(function() {
             $('#footer').load("./assets/php/footer.php");
         });
     </script>
@@ -28,11 +26,9 @@
 </head>
 
 <body>
-    <!-- not sure how many aisles and products we have to fully create so here's a page to redirect to if we dont actually have to create a page for some url -->
-
     <!-- Header -->
     <header class="header">
-        <a href="./index.php " class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
+        <a href="./index.php" class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
         <!-- menu -->
         <nav class="navbar">
             <a href="./index.php">home</a>
@@ -92,33 +88,34 @@
             <h3>log in</h3>
             <input type="email" placeholder="enter email" class="box">
             <input type="password" placeholder="enter password" class="box">
-            <br>
-            <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf"
-                target="_blank">forgot your password?</a>
+            <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf" target="_blank">forgot your password?</a>
 
             <a href="./p6_signup.php">Create An Account</a>
             <a href="#" class="btn"> Login Now </a>
         </form>
     </header>
-    <!--END OF HEADER-->
+    <!---END OF HEADER-->
+    <h1 class="About-header"> ABOUT US</h1>
+    <div>
+        <div class="About-us-background">
 
+            Hello!
+            <br>Thank you for visiting <b>50/10</b>,
+            <br>We are a group of students from Concordia University
+            <br>studying software engineering,
+            <br>trying to make a living off of selling products.
+            <br>You make that possible through buying our products!<br>
 
-    <main>
-        <div class="under-construction-msg">
-            <h1> This page is being built</h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs0jdRusVq321xZjr9N9suat9sWz9SirkSBEdAxvgQ3NHm1LJn64s5fV69DWs6owusG04&usqp=CAU"
-                alt="yellow under construction sign">
-            <p> our team is working tirelessly to improve your experience</p>
+            <img class="Student-pic" src="/images/Students1.JPG">
 
         </div>
-    </main>
+    </div>
 
     <!---- Footer --->
     <div id="footer"></div>
     <!-End Of Footer->
 
         <script src="js/script.js"></script>
-
 </body>
 
 </html>
