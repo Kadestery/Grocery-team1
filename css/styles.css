@@ -187,7 +187,7 @@ Header
     display: block;
   }
 
-.header .icons div{
+.header .icons a{
   background-color: var(--clr-4);
   border: 0.2rem solid var(--clr-1);
   border-radius: 1rem;
@@ -201,7 +201,7 @@ Header
   cursor: pointer;
 }
 
-.header .icons div:hover{
+.header .icons a:hover{
   background-color: var(--clr-1);
   color: var(--clr-4);
   transition: var(--transition);
