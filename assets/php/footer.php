@@ -7,9 +7,6 @@
                     <a target="_blank" href="https://www.linkedin.com/in/ali-fetanat-42216521b/">Ali Fetanat</a>
                 </li>
                 <li>
-                    <a target="_blank" href="./underConstruction.php">Elliot Vinet</a>
-                </li>
-                <li>
                     <a target="_blank" href="https://www.linkedin.com/in/gabriel-dubois-soen/">Gabriel Dubois</a>
                 </li>
                 <li>
