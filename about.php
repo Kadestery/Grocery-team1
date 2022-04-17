@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <?php include('./assets/php/header.php'); ?>
 
 <h1 class="About-header"> ABOUT US</h1>
