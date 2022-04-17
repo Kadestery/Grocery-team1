@@ -23,7 +23,7 @@
             <a class='bx bx-menu-alt-right' id="menu-btn"></a>
             <!--a class='bx bx-search-alt' id="search-btn"></a-->
             <a href= "./p4_cart.php" class='bx bx-cart'></a>
-            <a href="./p6_signup.php" class='bx bx-log-in-circle' id="log-btn"></a>
+            <a href="./p5_login.php" class='bx bx-log-in-circle' id="log-btn"></a>
         </div>
         
 </header>
