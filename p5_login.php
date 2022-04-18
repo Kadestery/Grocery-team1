@@ -43,7 +43,7 @@
                 <button style= "font-weight: bold;  font-size: 12pt"type="button" class="btn btn-outline-dark" data-toggle="collapse" data-target="#infoAdmin">Admin Access</button>
                     <div class="collapse" id="infoAdmin">
                         <br>
-                        <div class="alert alert-secondary" role="alert" style="font-size: 10pt;">
+                        <div  class="alert alert-secondary" role="alert" style="font-size: 10pt;text-transform:lowercase">
                         admin credentials<br>
                         username: admin@5010.com<br>
                         password: admin
@@ -59,11 +59,11 @@
                 ?>
                 <div class="textbox">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    <input class="form-control" type="email" id="loginEmail" name="email" placeholder="Email" onmouseover="this.focus();">
+                    <input style="text-transform:none" class="form-control" type="email" id="loginEmail" name="email" placeholder="Email" onmouseover="this.focus();">
                 </div>
                 <div class="textbox">
                     <i class="fa fa-lock" aria-hidden="true"></i>
-                    <input class="form-control" type="password" id="loginPass" name="pwd" placeholder="Password" onmouseover="this.focus();"></br>
+                    <input style="text-transform:none" class="form-control" type="password" id="loginPass" name="pwd" placeholder="Password" onmouseover="this.focus();"></br>
                 </div>
                 <div class="form-check" style="margin-left:20%;">
                     <input type="checkbox" class="form-check-input" id="remember" name="remember">
