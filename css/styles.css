@@ -1194,18 +1194,38 @@ font-size: medium;
 }
 
 @media (max-width: 700px) {
-    .checkout-btn{
- font-size: medium;
-}
-.checkout-col2{
-margin-left: auto;
-}
+  .checkout-btn{
+  font-size: medium;
+  }
 
-.cart-container{
-font-size: small;
+  .checkout-col2{
+  margin-left: auto;
+  }
+
+  .cart-container{
+  font-size: small;
+
+  }
 
 }
-
+@media (max-width: 532px) 
+{
+  .checkout-btn
+  {
+    font-size: small;
+    margin-top: 150px ;
+    margin-right: -200%;
+    margin-left: 140%;
+    width: 180px;
+    align-self: center;
+    display: block;
+  }
+  .checkout-col2
+  {
+    align-content: center;
+    display: block;
+  }
+  
 }
 
 .checkout-btn:hover{
@@ -1255,6 +1275,7 @@ margin-bottom: 5px;
   font-size: 1.5rem;
   cursor: pointer;
   font-size: large;
+  margin-left: 29%;
 }
 
 .login-btn:hover{
