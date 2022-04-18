@@ -87,13 +87,11 @@
 
         <form action="" class="login-form">
             <h3>log in</h3>
-            <input type="email" placeholder="enter email" class="box">
-            <input type="password" placeholder="enter password" class="box">
             <br>
             <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf" target="_blank">forgot your password?</a>
 
             <a href="./p6_signup.php">Create An Account</a>
-            <a href="#" class="btn"> Login Now </a>
+            <a href="./p5_login.php" class="btn"> Login Now </a>
         </form>
     </header>
     <!--END OF HEADER-->

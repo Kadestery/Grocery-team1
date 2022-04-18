@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['login-submit'])){ //checking if user got here from submit button and not from URL
+if(isset($_POST['login-submit'])){ 
     require 'dbh.php';
 
     $email = $_POST['email'];
@@ -13,21 +13,21 @@ if(isset($_POST['login-submit'])){ //checking if user got here from submit butto
     else {
         $sql = "SELECT * FROM users WHERE email=?";
         $stmt = mysqli_stmt_init($conn);
-        if(!mysqli_stmt_prepare($stmt, $sql)){ //checking if $sql is good to go with $stmt, prepare statement
+        if(!mysqli_stmt_prepare($stmt, $sql)){ 
             header("Location: ../../index.php?error=sqlerror");
             exit();
         }
-        else{ //grab info we got from $sql;
-            mysqli_stmt_bind_param($stmt, "s", $email); //include statement that we want to send ($stmt) + tell what kind of data sent + actual data to bind
-            mysqli_stmt_execute($stmt); //executing previous params
-            $result = mysqli_stmt_get_result($stmt); //info we got from db are now in $result (matches?)
-            if($row = mysqli_fetch_assoc($result)){ //storing $result into an associative array to allow php manipulation
-                $pwdCheck = password_verify($password, $row['pass']); //checking if user entered pwd is same as the one in db. (will hash the user input pwd prior)
+        else{ 
+            mysqli_stmt_bind_param($stmt, "s", $email); 
+            mysqli_stmt_execute($stmt); 
+            $result = mysqli_stmt_get_result($stmt); 
+            if($row = mysqli_fetch_assoc($result)){ 
+                $pwdCheck = password_verify($password, $row['pass']);
                 if($pwdCheck == false){
                     header("Location: ../../p5_login.php?error=wrongpwd");
                     exit();
                 }
-                else if($pwdCheck == true){ //we want lock in user if success login: need session, global variable that has info of user.
+                else if($pwdCheck == true){ 
                     session_start();
                     $_SESSION['userId'] = $row['id'];
                     $_SESSION['userName'] = $row['name'];
