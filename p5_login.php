@@ -24,7 +24,7 @@
                         <div  class="alert alert-secondary" role="alert" style="font-size: 10pt;text-transform:lowercase">
                         admin credentials<br>
                         username: admin@5010.com<br>
-                        password: admin
+                        password: *********
                         </div>
                     </div>
                 </h1>
