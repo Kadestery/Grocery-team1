@@ -1,3 +1,3 @@
-URL: https://fifty-ten-grocery.netlify.app/
+URL: https://fifty-ten.herokuapp.com/
 
 TEAM 1
