@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include('./assets/php/header.php'); ?>
 
 
@@ -104,3 +105,8 @@
     </body>
 
     </html>
+=======
+
+    <?php
+    echo "hello world";
+>>>>>>> 2bce379 (?)

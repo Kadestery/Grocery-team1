@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisles page</title>
+
+    <!-- boxicon link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- import css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    
+    <!-- favicon (title of page image) -->
+    <link rel="icon" href="/images/favicon.JPG" sizes="32x32" type="image/JPG">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integity="sha256-2Kok7Mb0yxpgUVvAk/H32jig0SYS2auk4Pfzbm7uH60=" crossorigin "anonymous"></script>
+    <script>
+        $(function() {
+            $('#footer').load("./assets/php/footer.html");
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+     <header class="header">
+        <a href="./index.html " class="logo"> <i class="bx bxs-cricket-ball"></i> 50/10</a>
+        <!-- menu -->
+        <nav class="navbar">
+            <a href="./index.html">home</a>
+            <a href="#aisles" id="aisles-btn">Aisles</a>
+            <a href="./about.html">about us</a>
+            <a href="./p7_backstore.html">Backstore</a>
+        </nav>
+        <div class="aisles-menu">
+            <a href="./p2_fruitaisle.html">Fruits</a>
+            <a href="./p2_VegetablesAisle.html">Vegetables</a>
+            <a href="./p2_DairyAisle.html">Dairy</a>
+            <a href="./p2_MeatAisle.html">Meat</a>
+            <a href="./p2_PastryAisle.html">Pastry</a>
+            <a href="./p2_SnacksAisle.html">Snacks</a>
+            <a href="./p2_SeafoodAisle.html">Seafood</a>
+            <a href="./p2_WaterAisle.html">Drinks</a>
+        </div>
+        <!-- buttons -->
+        <div class="icons">
+            <div class='bx bx-menu-alt-right' id="menu-btn"></div>
+            <div class='bx bx-search-alt' id="search-btn"></div>
+            <div class='bx bx-cart' id="cart-btn"></div>
+            <div class='bx bx-log-in-circle' id="log-btn"></div>
+        </div>
+        <!-- search -->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search...">
+            <label for="search-box" class="bx bx-search-alt"></label>
+        </form>
+        <!-- cart -->
+        <div class="cart">
+            <div class="box">
+                <i class='bx bx-trash'></i>
+                <img src="./images/k.jpg" alt="">
+                <div class="content">
+                    <h3>Name</h3>
+                    <span class="price">price$</span>
+                    <span class="quantity">qty: variable</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class='bx bx-trash'></i>
+                <img src="./images/k.jpg" alt="">
+                <div class="content">
+                    <h3>name</h3>
+                    <span class="price">price$</span>
+                    <span class="quantity">qty: variable</span>
+                </div>
+            </div>
+            <div class="total">total: totalPrice$</div>
+            <a href="./p4_cart.html" class="btn">Review Items</a>
+        </div>
+
+        <!-- login -->
+
+        <form action="" class="login-form">
+            <h3>log in</h3>
+            <input type="email" placeholder="enter email" class="box">
+            <input type="password" placeholder="enter password" class="box">
+            <br>
+            <a href="https://alzheimer.ca/sites/default/files/documents/alzheimers-disease_getting-a-diagnosis_0.pdf"
+                target="_blank">forgot your password?</a>
+
+            <a href="./p6_signup.html">Create An Account</a>
+            <a href="#" class="btn"> Login Now </a>
+        </form>
+    </header>
+    <!--END OF HEADER-->
+
+    <main>
+        <!-- product list -->
+        <section>
+            <h1 class="section-title"><span>Our Fresh Pastry</span></h1>
+
+
+            <!-- the files path will have to be changed -->
+            <div class="row">
+
+                <div class="col-4">
+                    <div class="product">
+                        <a href="./p3_Danish.html">
+                            <img src="./images/Danish.jpg" alt="Danish">
+                            <h4 class="aisle-text">Plain Danish</h4>
+                            <p class="aisle-text">$1.50/unit</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-4">
+                    <div class="product">
+                        <a href="./p3_Strudel.html">
+                            <img src="./images/Strudel.jpg" alt="Strudel">
+
+                            <h4 class="aisle-text">Raspberry Strudel</h4>
+                            <p class="aisle-text">$2.00/unit</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-4">
+                    <div class="product">
+                        <a href="./p3_Croissant.html">
+                            <img src="./images/Croissant.jpg" alt="Croissant">
+                            <h4 class="aisle-text">Croissant</h4>
+                            <p class="aisle-text">$1.75/unit</p>
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <div class="page-btn">
+            <h2 class="span1">Page</h2>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#85943 </span>
+        </div>
+        </div>
+
+    </main>
+
+    <!---- Footer --->
+        <div id="footer"></div>
+    <!-End Of Footer->
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
